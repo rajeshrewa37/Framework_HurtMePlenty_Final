@@ -4,74 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fab5b41f-7370-4832-8cbd-98d9c2b68e54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SmokePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CalculatorSmokeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/util/TestListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/qa.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_all.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots2022-08-05_14-47-37.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots2022-08-05_14-52-28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/screenshots2022-08-05_14-53-17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/All tests/All tests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/All tests/All tests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/All tests/testng-failed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/failed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-tests.CalculatorPageTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/All tests/All tests.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/All tests/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/All tests/groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/All tests/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/All tests/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/All tests/methods-alphabetical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/All tests/methods-not-run.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/All tests/methods.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/All tests/reporter-output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/All tests/testng.xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/All tests/toc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/passed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/skipped.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/testng.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/browser.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/qa.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/testng_all.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Factory/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/WebDriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enumeration/LocalFirefoxInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enumeration/LocalFirefoxInvoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CalculatorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CalculatorPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CalculatorPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/browser.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/browser.properties" afterDir="false" />
-    </list>
+    <list default="true" id="fab5b41f-7370-4832-8cbd-98d9c2b68e54" name="Changes" comment="commit 5 aug" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +36,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Framework_HurtMePlenty_Final",
+    "last_opened_file_path": "C:/Framework_HurtMePlenty_Final/src/test/java/tests/icanwin",
     "settings.editor.selected.configurable": "configurable.group.other"
   }
 }]]></component>
@@ -116,6 +49,14 @@
       <option name="presentableId" value="Default" />
       <updated>1659690087948</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit 5 aug">
+      <created>1659694675384</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659694675384</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,5 +72,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit 5 aug" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 5 aug" />
   </component>
 </project>
