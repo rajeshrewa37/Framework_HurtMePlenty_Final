@@ -4,33 +4,85 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class CalculatorPage extends BasePage {
     public CalculatorPage(WebDriver driver) {
         super(driver);
+        PageFactory.initElements(driver,this);
     }
 
-    private By devSiteSearch = By.className("devsite-search-form");
-    private By googleSearch = By.xpath("//input[@class='devsite-search-field devsite-search-query']");
-    private By switchToCalculator = By.xpath("//div[@class='gs-title']//b[contains(text(),'Google Cloud Pricing Calculator')]");
-    private By newFirstFrame = By.xpath("//iframe[contains(@name,'goog_')]");
-    private By instancesField = By.xpath("//md-input-container/child::input[@ng-model='listingCtrl.computeServer.quantity']");
-    private By seriesOfMachine = By.xpath("//md-select[@name='series']/parent::md-input-container");
-    private By seriesOfMachineModel = By.xpath("//md-option[@value='n1']");
-    private By machineType = By.xpath("//label[text()='Machine type']/parent::md-input-container");
-    private By computeEngine = By.xpath("//md-option[@value='CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8']");
-    private By gpusCheckBox = By.xpath("//md-checkbox[@aria-label='Add GPUs']");
-    private By gpuType = By.xpath("//md-select[@placeholder='GPU type']");
-   private By gpuTypeModel =By.xpath("//md-option[@value='NVIDIA_TESLA_V100']");
-    private By numberOfGpus = By.xpath("//md-select[@placeholder='Number of GPUs']");
-    private By numberOfGpusModel = By.cssSelector("md-option[value='1'][class='ng-scope md-ink-ripple'][ng-disabled]");
-    private By localSsd = By.xpath("//md-select[@placeholder='Local SSD']");
-    private By localSsdModel = By.xpath("//md-option[@ng-repeat='item in listingCtrl.dynamicSsd.computeServer'][@value='2']/div[@class='md-text ng-binding']");
-    private By dataCenterLocation = By.xpath("//md-select[@placeholder='Datacenter location']");
-    private By dataCenterLocationInFrankfurt = By.cssSelector("md-select-menu[class='md-overflow']" + " md-option[value='europe-west3'][ng-repeat*='fullRegionList']");
-    private By committedUsage = By.xpath("//md-select[@placeholder='Committed usage']");
-    private By oneYearUsage = By.cssSelector("div[class='md-select-menu-container md-active md-clickable']" + " md-option[value='1'][class='md-ink-ripple']");
-    private By addToEstimateButton = By.xpath("//button[@aria-label='Add to Estimate']");
+    @FindBy(className="devsite-search-form")
+    private WebElement devSiteSearch;
+    //private By devSiteSearch = By.className("devsite-search-form");
+    @FindBy(xpath="//input[@class='devsite-search-field devsite-search-query']")
+    private WebElement textForGoogleSearch;
+                //private By googleSearch = By.xpath("//input[@class='devsite-search-field devsite-search-query']");
+    @FindBy(xpath="//div[@class='gs-title']//b[contains(text(),'Google Cloud Pricing Calculator')]")
+    private WebElement switchToCalculator;
+
+    //private By switchToCalculator = By.xpath("//div[@class='gs-title']//b[contains(text(),'Google Cloud Pricing Calculator')]");
+    @FindBy(xpath="//iframe[contains(@name,'goog_')]")
+    private WebElement newFirstFrame;
+
+    //private By newFirstFrame = By.xpath("//iframe[contains(@name,'goog_')]");
+    @FindBy(xpath="//md-input-container/child::input[@ng-model='listingCtrl.computeServer.quantity']")
+    private WebElement instancesField;
+
+    // private By instancesField = By.xpath("//md-input-container/child::input[@ng-model='listingCtrl.computeServer.quantity']");
+   @FindBy(xpath="//md-select[@name='series']/parent::md-input-container")
+   private WebElement seriesOfMachine;
+    // private By seriesOfMachine = By.xpath("//md-select[@name='series']/parent::md-input-container");
+@FindBy(xpath="//md-option[@value='n1']")
+    private WebElement seriesOfMachineModel;
+
+    // private By seriesOfMachineModel = By.xpath("//md-option[@value='n1']");
+    @FindBy(xpath="//label[text()='Machine type']/parent::md-input-container")
+    private WebElement machineType;
+    //private By machineType = By.xpath("//label[text()='Machine type']/parent::md-input-container");
+    @FindBy(xpath="//md-option[@value='CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8']")
+    private WebElement computeEngine;
+    //private By computeEngine = By.xpath("//md-option[@value='CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8']");
+@FindBy(xpath="//md-checkbox[@aria-label='Add GPUs']")
+    private WebElement gpusCheckBox;
+    //private By gpusCheckBox = By.xpath("//md-checkbox[@aria-label='Add GPUs']");
+@FindBy(xpath="//md-select[@placeholder='GPU type']")
+    private WebElement gpuType;
+    // private By gpuType = By.xpath("//md-select[@placeholder='GPU type']");
+@FindBy(xpath="//md-option[@value='NVIDIA_TESLA_V100']")
+    private WebElement gpuTypeModel;
+    //private By gpuTypeModel =By.xpath("//md-option[@value='NVIDIA_TESLA_V100']");
+@FindBy(xpath="//md-select[@placeholder='Number of GPUs']")
+    private WebElement numberOfGpus;
+    //private By numberOfGpus = By.xpath("//md-select[@placeholder='Number of GPUs']");
+@FindBy(css="md-option[value='1'][class='ng-scope md-ink-ripple'][ng-disabled]")
+    private WebElement numberOfGpusModel;
+    //private By numberOfGpusModel = By.cssSelector("md-option[value='1'][class='ng-scope md-ink-ripple'][ng-disabled]");
+  @FindBy(xpath="//md-select[@placeholder='Local SSD']")
+  private WebElement localSsd;
+   // private By localSsd = By.xpath("//md-select[@placeholder='Local SSD']");
+@FindBy(xpath="//md-option[@ng-repeat='item in listingCtrl.dynamicSsd.computeServer'][@value='2']/div[@class='md-text ng-binding']")
+    private WebElement localSsdModel;
+    //private By localSsdModel = By.xpath("//md-option[@ng-repeat='item in listingCtrl.dynamicSsd.computeServer'][@value='2']/div[@class='md-text ng-binding']");
+   @FindBy(xpath="//md-select[@placeholder='Datacenter location']")
+   private WebElement dataCenterLocation;
+    //private By dataCenterLocation = By.xpath("//md-select[@placeholder='Datacenter location']");
+  @FindBy(css="md-select-menu[class='md-overflow']" + " md-option[value='europe-west3'][ng-repeat*='fullRegionList']")
+  private WebElement dataCenterLocationInFrankfurt;
+   // private By dataCenterLocationInFrankfurt = By.cssSelector("md-select-menu[class='md-overflow']" + " md-option[value='europe-west3'][ng-repeat*='fullRegionList']");
+
+    @FindBy(xpath="//md-select[@placeholder='Committed usage']")
+    private WebElement committedUsage;
+
+    // private By committedUsage = By.xpath("//md-select[@placeholder='Committed usage']");
+
+@FindBy(css = "div[class='md-select-menu-container md-active md-clickable']" + " md-option[value='1'][class='md-ink-ripple']")
+    private WebElement oneYearUsage;
+    //private By oneYearUsage = By.cssSelector("div[class='md-select-menu-container md-active md-clickable']" + " md-option[value='1'][class='md-ink-ripple']");
+   @FindBy(xpath="//button[@aria-label='Add to Estimate']")
+   private WebElement addToEstimateButton;
+    // private By addToEstimateButton = By.xpath("//button[@aria-label='Add to Estimate']");
     private By informationInVmClassIsRegular = By.xpath("//div[contains (text(),'Provisioning model: Regular')]");
     private By InformationInInstanceTypeIncludeN1Standard8 =
             By.xpath("//div[contains (text(),'Instance type: n1-standard-8')]");
@@ -42,48 +94,49 @@ public class CalculatorPage extends BasePage {
 
 
     public void openCloudPage() {
-        driver.get("https://cloud.google.com/");
+        driver.get("https://cloud.google.com/products/calculator");
     }
 
     public void goToGoogleCloudPlatformPricingCalculatorPage(String keyForCalculatorPageOpening) throws InterruptedException {
-        driver.findElement(devSiteSearch).click();
-        WebElement textForGoogleSearch = driver.findElement(googleSearch);
+        devSiteSearch.click();
+     //   WebElement textForGoogleSearch = driver.findElement(googleSearch);
         textForGoogleSearch.click();
         textForGoogleSearch.sendKeys(keyForCalculatorPageOpening);
         textForGoogleSearch.sendKeys(Keys.ENTER);
         Thread.sleep(5000);
-        driver.findElement(switchToCalculator).click();
+        switchToCalculator.click();
     }
 
     public CalculatorPage sendKeyInToNumberOfInstancesField(String keyForNumberOfInstances) throws InterruptedException {
-        WebElement element = driver.findElement(newFirstFrame);
-        driver.switchTo().frame(element);
+        newFirstFrame.click();
+        driver.switchTo().frame(newFirstFrame);
         driver.switchTo().frame("myFrame");
         Thread.sleep(5000);
-        WebElement numberOfInstancesField = driver.findElement(instancesField);
-        numberOfInstancesField.sendKeys(keyForNumberOfInstances);
-        Thread.sleep(5000);
+      //  WebElement numberOfInstancesField = driver.findElement(instancesField);
+        instancesField.sendKeys(keyForNumberOfInstances);
+        //Thread.sleep(5000);
         return this;
     }
 
     public CalculatorPage selectSeriesOfMachine() throws InterruptedException {
-        driver.findElement(seriesOfMachine).click();
-        Thread.sleep(5000);
-        driver.findElement(seriesOfMachineModel).click();
+
+        seriesOfMachine.click();
+        Thread.sleep(3000);
+        seriesOfMachineModel.click();
         Thread.sleep(5000);
         return this;
     }
 
     public CalculatorPage selectMachineType() throws InterruptedException {
-        driver.findElement(machineType).click();
+        machineType.click();
         Thread.sleep(5000);
-        driver.findElement(computeEngine).click();
+        computeEngine.click();
         Thread.sleep(5000);
         return this;
     }
 
     public CalculatorPage clickAddGpusCheckBox() throws InterruptedException {
-        driver.findElement(gpusCheckBox).click();
+        gpusCheckBox.click();
         Thread.sleep(5000);
         return this;
     }
@@ -91,76 +144,75 @@ public class CalculatorPage extends BasePage {
 
 
     public CalculatorPage selectGpuType() throws InterruptedException {
-        driver.findElement(gpuType).click();
+        gpuType.click();
         Thread.sleep(5000);
-        driver.findElement(gpuTypeModel).click();
+        gpuTypeModel.click();
         Thread.sleep(2000);
         return this;
     }
     public CalculatorPage selectNumberOfGpus() throws InterruptedException {
-        driver.findElement(numberOfGpus).click();
+        numberOfGpus.click();
         Thread.sleep(5000);
-        driver.findElement(numberOfGpusModel).click();
+        numberOfGpusModel.click();
         Thread.sleep(5000);
         return this;
     }
     public CalculatorPage selectLocalSsd() throws InterruptedException {
-        driver.findElement(localSsd).click();
+        localSsd.click();
         Thread.sleep(5000);
-        driver.findElement(localSsdModel).click();
+        localSsdModel.click();
         Thread.sleep(5000);
         return this;
     }
 
     public CalculatorPage selectDataCenterLocation() throws InterruptedException {
-        driver.findElement(dataCenterLocation).click();
+        dataCenterLocation.click();
         Thread.sleep(5000);
-        driver.findElement(dataCenterLocationInFrankfurt).click();
+        dataCenterLocationInFrankfurt.click();
         Thread.sleep(5000);
         return this;
     }
 
     public CalculatorPage selectCommittedUsage() throws InterruptedException {
-        driver.findElement(committedUsage).click();
+        committedUsage.click();
         Thread.sleep(5000);
-        driver.findElement(oneYearUsage).click();
-        Thread.sleep(5000);
-        return this;
-    }
-
-    public CalculatorPage pushAddToEstimate() throws InterruptedException {
-        driver.findElement(addToEstimateButton).click();
+        oneYearUsage.click();
         Thread.sleep(5000);
         return this;
     }
 
-   public CalculatorPage checkInformationInVmClassIsRegular() {
-
-        driver.findElement(informationInVmClassIsRegular);
-       return this;
+    public void pushAddToEstimate() throws InterruptedException {
+        addToEstimateButton.click();
+        Thread.sleep(5000);
     }
-   public CalculatorPage checkInformationInInstanceTypeIncludeN1Standard8()
+
+   public boolean checkInformationInVmClassIsRegular() {
+
+       WebElement infoVMClass = driver.findElement(informationInVmClassIsRegular);
+       return infoVMClass.isDisplayed();
+    }
+   public boolean checkInformationInInstanceTypeIncludeN1Standard8()
    {
-        driver.findElement(InformationInInstanceTypeIncludeN1Standard8);
-       return this;
+        WebElement  instanceType= driver.findElement(InformationInInstanceTypeIncludeN1Standard8);
+       return instanceType.isDisplayed();
    }
 
-    public CalculatorPage checkRegionIsFrankfurt() {
+    public boolean checkRegionIsFrankfurt() {
 
-        driver.findElement(regionIsFrankfurt);
-        return this;
+        WebElement frankfurt = driver.findElement(regionIsFrankfurt);
+        return frankfurt.isDisplayed();
    }
 
-   public CalculatorPage checkLocalSsdSpace2x375Gib() {
+   public boolean checkLocalSsdSpace2x375Gib() {
 
-        driver.findElement(localSsdSpace2x375Gib);
-       return this;
+        WebElement ssd = driver.findElement(localSsdSpace2x375Gib);
+       return ssd.isDisplayed();
    }
 
-    public CalculatorPage checkCommitmentTermOneYear() {
+    public boolean checkCommitmentTermOneYear() {
 
-        driver.findElement(commitmentTermOneYear);
-        return this;
+        WebElement term = driver.findElement(commitmentTermOneYear);
+        return term.isDisplayed();
 
     }
 }

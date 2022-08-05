@@ -1,0 +1,15 @@
+C:\Framework_HurtMePlenty_Final\src\main\java\converters\SupportedBrowserConverter.java
+C:\Framework_HurtMePlenty_Final\src\main\java\pages\SmokePage.java
+C:\Framework_HurtMePlenty_Final\src\main\java\pages\CalculatorPage.java
+C:\Framework_HurtMePlenty_Final\src\main\java\enumeration\SupportedBrowsers.java
+C:\Framework_HurtMePlenty_Final\src\main\java\Service\CalculatorService.java
+C:\Framework_HurtMePlenty_Final\src\main\java\enumeration\LocalChromeInvoker.java
+C:\Framework_HurtMePlenty_Final\src\main\java\enumeration\LocalFirefoxInvoker.java
+C:\Framework_HurtMePlenty_Final\src\main\java\Factory\WebDriverFactory.java
+C:\Framework_HurtMePlenty_Final\src\main\java\Holder\PropertyHolder.java
+C:\Framework_HurtMePlenty_Final\src\main\java\Service\TestDataReader.java
+C:\Framework_HurtMePlenty_Final\src\main\java\enumeration\RemoteChromeInvoker.java
+C:\Framework_HurtMePlenty_Final\src\main\java\pages\BasePage.java
+C:\Framework_HurtMePlenty_Final\src\main\java\Model\Calculator.java
+C:\Framework_HurtMePlenty_Final\src\main\java\implenentation\WebDriverInvoker.java
+C:\Framework_HurtMePlenty_Final\src\main\java\Service\PropertyReader.java
