@@ -15,7 +15,6 @@ public class PropertyHolder {
             System.err.println(e.getMessage());
         }
     }
-
     public String readProperty(String propertyName) {
 
         return properties.getProperty(propertyName);

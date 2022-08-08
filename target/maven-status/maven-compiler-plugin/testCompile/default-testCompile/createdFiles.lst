@@ -1,4 +1,5 @@
 tests\util\TestListener.class
+ProjectDemo.class
 tests\BaseTest.class
 tests\CalculatorPageTests.class
 tests\CalculatorSmokeTest.class
